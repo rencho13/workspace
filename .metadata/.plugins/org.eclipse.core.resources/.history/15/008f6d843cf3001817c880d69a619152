@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Paques {
+	private static Scanner saisi = new Scanner(System.in);
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		demanderAnnee();
+	}
+
+	
+	private static int demanderAnnee() {
+		int annee=0;
+		do { System.out.println("Entrez une annee (1583-4000) :");
+		saisi.nextInt();
+		
+		} while( annee <1583 || annee > 4000);
+		
+		return annee;
+		}
+}

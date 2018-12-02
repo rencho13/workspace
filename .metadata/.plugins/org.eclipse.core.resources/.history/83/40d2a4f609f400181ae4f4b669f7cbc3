@@ -1,0 +1,45 @@
+package com.rencho.programmation;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static Scanner saisi = new Scanner(System.in);
+	public static void main(String[] args) {
+		boolean valide ;
+		String matrice;
+		do { valide = true;
+		System.out.println("Saisie de la matrice :" );
+		matrice = saisi.nextLine();
+		for ( int i =0 ; i < matrice.length() ; ++i) {
+			char c = matrice.charAt(i);
+		if (c !='0' &&  c !='1' && c != ' ') {
+			valide = false;
+		} 
+		
+		}if (!valide) { System.out.println("Matrice invalide, seulement ’1’ , ’0’ et ’ ’ admis!");}
+				
+		} while (!valide);
+		
+		System.out.println("Matrice saisie : " + matrice);
+		
+		String[] lignes = matrice.split(" {1,}");
+		//for (String elements : lignes) {
+		//System.out.println(elements);}
+		int compteur=lignes[0].length();
+		boolean matriceValide = true;
+		for (int i = 0 ; i < lignes.length; ++i) {
+		
+			if (lignes[i].length() != compteur) {
+				
+				matriceValide = false; 	
+			}
+		}System.out.println("Matrice invalide, lignes de longueurs differentes!");
+		//System.out.println(lignes[2].length());
+	 }
+	}
+
+
+

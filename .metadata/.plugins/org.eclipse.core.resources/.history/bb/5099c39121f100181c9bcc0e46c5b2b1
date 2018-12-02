@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class Tab {
+
+	public static void main(String[] args) {
+		String s = "nouveau";
+		String s1 = "un";
+		String s2 = "une chaine";
+
+		s = s.substring(0,4);
+		s = s + "elle ";
+
+		String subs = s2.substring(4,s2.length());
+
+		s = s + subs;
+		s = s1 + s;
+
+		System.out.println(s);
+} }
+

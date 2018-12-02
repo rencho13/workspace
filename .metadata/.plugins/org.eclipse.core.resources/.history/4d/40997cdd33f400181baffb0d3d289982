@@ -1,0 +1,5 @@
+
+public class Rect {
+
+	static double hauteur= 1.12;
+}

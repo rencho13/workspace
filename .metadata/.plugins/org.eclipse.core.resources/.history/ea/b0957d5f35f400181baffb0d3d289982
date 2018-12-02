@@ -1,0 +1,13 @@
+
+public class Rect 
+{
+
+	static double hauteur;
+
+	double surface(double largeur) {
+		
+		
+		return largeur * hauteur;
+	}
+}
+

@@ -1,0 +1,29 @@
+package com.rencho.programmation;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static Scanner saisi = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		System.out.println("Entrez x :" );
+		int x= saisi.nextInt();
+		System.out.println("Entrez y : ");
+		int y = saisi.nextInt();
+		
+		System.out.println("Avant permutation:");
+		System.out.println(" x : " + x);
+		System.out.println(" y : " + y);
+		int temp= y;
+		y=x;
+		x = temp;
+		System.out.println("Aprés permutation:");
+		System.out.println(" x : " + x);
+		System.out.println(" y : " + y);
+	}
+
+}
+

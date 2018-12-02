@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Imc {
+
+	private static Scanner saisi;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double poids;
+		double taille;
+		
+		saisi = new Scanner(System.in);
+		System.out.print("Calcul de l'IMC :");
+		System.out.print("Quel est votre poids en kg ? :");
+		poids = saisi.nextDouble();
+		System.out.print("Quel est votre taille en m ? :");
+		taille = saisi.nextDouble();
+		double imc = poids / ( taille * taille);
+		System.out.println("Votre IMC est de : " + imc);
+		
+		
+		
+	}
+
+}

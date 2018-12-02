@@ -1,0 +1,16 @@
+
+public class Figure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Rect.hauteur);
+		System.out.println(Rect.surface(12));
+		Rect.hauteur = 1.1;
+		System.out.println(Rect.hauteur);
+		System.out.println(Rect.surface(12));
+		
+		
+	}
+
+}
+

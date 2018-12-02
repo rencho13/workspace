@@ -1,0 +1,72 @@
+
+public class Puissance4 {
+	
+	private final static int VIDE = 0 ;
+	private final static int JAUNE = 1 ;
+	private final static int ROUGE = 2;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int[][] grille = new int [6][7];
+		initialise(grille);	
+		joue(grille,3, JAUNE);
+		affiche(grille);
+		joue(grille,4, ROUGE);
+		affiche(grille);
+		joue(grille,1, JAUNE);
+		affiche(grille);
+		joue(grille,3, JAUNE);
+		affiche(grille);
+		joue(grille,4, ROUGE);
+		affiche(grille);
+		joue(grille,1, JAUNE);
+		affiche(grille);
+	}
+	// initialisation de la grille , en mettant 0 dans chaque case, donc des cases vides
+	static void initialise (int[][] grille) {
+		
+		for ( int i = 0; i < grille.length ; ++i) {
+			for ( int j = 0 ; j < grille[0].length ; ++j){
+				grille[i][j] = VIDE;
+			}
+		}
+	}
+	//affiche O pour une case rouge , X pour une case jaune et un espace pour une case vide
+	static void affiche (int[][] grille){
+		System.out.println();
+		for ( int[] ligne : grille) {
+			System.out.print('|');
+			for ( int cellule : ligne) {
+				if ( cellule == VIDE) {
+					System.out.print(' '); }
+				else if ( cellule == ROUGE) {
+					System.out.print('O'); }
+				else  {
+					System.out.print('X'); }
+				System.out.print('|');
+				}
+			
+			System.out.println();
+			}
+		
+		//System.out.println('=');
+		for ( int i = 1 ; i <=grille[0].length; ++i)
+		{
+			System.out.print("="+i);
+		}	System.out.println("=\n");
+		}
+	
+	static void  joue(int[][] grille, int colonne, int couleur)
+	{	// on parcourt la colonne en partant du bas jusqu'a trouver une case vide :
+		int ligne = grille.length-1;
+		
+		while( grille[ligne][colonne]!= VIDE) {
+			--ligne;
+		}
+		// on remplit la case vide trouvée
+		grille[ligne][colonne]= couleur;
+		
+	}
+	}
+

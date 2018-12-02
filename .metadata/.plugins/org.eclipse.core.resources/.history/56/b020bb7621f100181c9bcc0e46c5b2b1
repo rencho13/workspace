@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Tab {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> tab = new ArrayList<Integer>();
+
+		int somme = 0;
+
+		for (int i = 0 ; i < 5 ; i++){
+			tab.add(i*2);
+			somme += tab.get(i);
+		}
+		
+		for (int i = 0 ; i < tab.size() ;i++) {
+			System.out.println(tab.get(i));
+		}
+} }
+

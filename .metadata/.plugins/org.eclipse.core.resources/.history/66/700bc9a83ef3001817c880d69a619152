@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Paques {
+	private static Scanner saisi = new Scanner(System.in);
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//demanderAnnee();
+		afficheDate(demanderAnnee(), 36);
+	}
+
+	
+	private static int demanderAnnee() {
+		int annee=0;
+		do { System.out.println("Entrez une annee (1583-4000) :");
+		annee = saisi.nextInt();
+		
+		} while( annee <1583 || annee > 4000);
+		
+		return annee;
+	} 
+	
+	private static void afficheDate( int annee, int nombreJour) {
+		String message = " ", mois = " ";
+		
+		
+		if (nombreJour <= 31 ) {
+			mois= "mars";}
+		if (nombreJour >= 32)
+			{
+			mois ="avril";
+			nombreJour-=31;
+			}
+		message = "Date de Paques en " + annee +" : " + mois;
+		System.out.printf(message);
+				
+
+	}
+
+}

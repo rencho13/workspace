@@ -1,0 +1,21 @@
+
+public class Figure {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(Rect.hauteur);
+		
+		Rect rectangle = new Rect();
+		rectangle.hauteur=1;
+		Rect rectangle2 = new Rect();
+		rectangle2.hauteur=2;
+		System.out.println(rectangle.hauteur);
+		System.out.println(rectangle2.hauteur);
+		System.out.println(Rect.hauteur);
+		
+		
+	}
+
+}
+

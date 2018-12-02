@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+
+		public class Quiz {
+
+			static void f1(int i, int j)
+				{
+					int copie =i;
+					i=j;
+					j=copie;
+				}
+
+			static int f2(int[] tab)
+				{
+					int j=1;
+					return j-1;
+				}
+
+			static int f3(int[] tab)
+				{
+					tab[0] = 0;
+					return tab[0]+1;
+				}
+
+			static int f4(int[] tab)
+				{
+					tab[1] = 1;
+					return tab[1];
+				}
+
+			public static void main(String[] args) {
+
+				int[] tab = {1,0};
+
+				tab[1] = f3(tab);
+
+				System.out.println("tab[0] = " + tab[0] + "; tab[1] = " + tab[1] );
+			}
+		
+		
+	
+}

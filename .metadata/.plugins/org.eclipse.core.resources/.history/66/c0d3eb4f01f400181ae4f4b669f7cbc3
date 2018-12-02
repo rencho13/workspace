@@ -1,0 +1,28 @@
+package com.rencho.programmation;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static Scanner saisi = new Scanner(System.in);
+	public static void main(String[] args) {
+		boolean valide = true;
+		do {
+		System.out.println("Entrez la séquence  :" );
+		String x = saisi.nextLine();
+		for ( int i =0 ; i < x.length() ; ++i) {
+			char c = x.charAt(i);
+		if (c !='0' ||  c !='1' || c != ' ') {
+			valide = false;
+			
+			
+		} System.out.println("Matrice invalide, seulement ’1’ , ’0’ et ’ ’ admis!");
+		
+		}	
+		} while (!valide);
+	}
+
+}
+

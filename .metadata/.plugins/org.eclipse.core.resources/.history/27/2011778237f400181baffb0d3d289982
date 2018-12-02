@@ -1,0 +1,11 @@
+
+public class Rect 
+{
+
+	private double hauteur=0;
+	double getHauteur() { return hauteur;}
+	double surface(double largeur) {
+		return largeur * hauteur;
+	}
+}
+

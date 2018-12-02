@@ -1,0 +1,28 @@
+
+public class Tab {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String a = "MO";
+		String b = "OC";
+		String c = a + b;
+		String d = "MOOC";
+		String e = d;
+
+		System.out.println(c);
+		System.out.println(d);
+
+		if (c == d) {
+			System.out.println("oui");
+		} else {
+			System.out.println("non");
+		}
+
+		if (d == e) {
+			System.out.println("oui");
+		} else {
+			System.out.println("non");
+		}
+} }

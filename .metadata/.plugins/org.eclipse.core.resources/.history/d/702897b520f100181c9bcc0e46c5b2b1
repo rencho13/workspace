@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Tab {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		ArrayList<Character> liste = new ArrayList();
+
+		liste.add('A');
+		liste.add('D');
+		liste.add('F');
+		liste.add('M');
+		liste.add('A');
+		liste.add('B');
+		liste.add('D');
+		System.out.println(liste.indexOf('F'));
+} }

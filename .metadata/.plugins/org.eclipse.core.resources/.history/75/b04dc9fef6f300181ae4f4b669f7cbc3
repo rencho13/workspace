@@ -1,0 +1,23 @@
+package com.rencho.programmation;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Test {
+
+	public static Scanner saisi = new Scanner(System.in);
+	public static void main(String[] args) {
+		
+		System.out.println("Entrez un réel :" );
+		double x = saisi.nextDouble();
+		if ( (x>=2 && x<3) || (x>0 && x<=1) || ( x>=-10 && x<=-2) ) {
+			System.out.println("X appartiert à I");
+		} else {
+			System.out.println("X n'appartient pas à I");
+		}
+	
+	}
+
+}
+

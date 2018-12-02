@@ -1,0 +1,15 @@
+
+public class Paques {
+	private static Scanner saisi = new Scanner(System,in);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	private static demanderAnnee() {
+		
+		
+	}
+}

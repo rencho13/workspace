@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Sexe {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner reponse = new Scanner(System.in);
+		System.out.println("quel est votre nom ?");
+		String nom = reponse.nextLine();
+		System.out.println("êtes-vous de sexe féminin ?");
+		String lettre = reponse.nextLine();
+		//lettre.toLowerCase();
+		String sexe ="monsieur";
+		
+		if ( lettre == "n")  System.out.println("bonjour monsieur " + nom); else System.out.println("bonjour madame " + nom);
+		//System.out.println("bonjour " + sexe + " " + nom);
+		//System.out.println(lettre.length());
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class Puissance4 {
+	
+	private final static int VIDE = 0 ;
+	private final static int JAUNE = 1 ;
+	private final static int ROUGE = 2;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int[][] grille = new int [6][7];
+				
+			
+		
+	}
+
+}

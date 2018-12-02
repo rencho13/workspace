@@ -1,0 +1,24 @@
+
+public class Puissance4 {
+	
+	private final static int VIDE = 0 ;
+	private final static int JAUNE = 1 ;
+	private final static int ROUGE = 2;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int[][] grille = new int [6][7];
+		initialise(grille);	
+	}
+	
+	static void initialise (int[][] grille) {
+		for ( int i = 0; i < grille.length ; ++i) {
+			for ( int j = 0 ; j < grille[0].length ; ++j){
+				grille[0][j] = VIDE;
+			}
+		}
+			
+		}
+	}
+}

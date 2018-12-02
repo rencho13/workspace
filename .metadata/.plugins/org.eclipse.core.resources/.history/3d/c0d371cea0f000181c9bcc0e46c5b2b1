@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class Moyenne {
+	
+	private static Scanner scanner = new Scanner(System.in);
+	
+		public static void main(String[] args) {
+			// Demande le nombre d'étudiants à l'utilisateur
+			int nombreEtudiants;
+			System.out.print("Donnez le nombre d'etudiants : ");
+			nombreEtudiants = scanner.nextInt();
+			double moyenne = 0.0;
+			// Initialise un tableau pouvant contenir autant
+			// de notes que d'étudiants
+			double [] notes = new double[nombreEtudiants];
+		}
+}

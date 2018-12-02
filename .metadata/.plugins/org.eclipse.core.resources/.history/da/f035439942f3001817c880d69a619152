@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Paques {
+	private static Scanner saisi = new Scanner(System.in);
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//demanderAnnee();
+		int annee = demanderAnnee();
+		
+		afficheDate(annee, datePaques(annee));
+	}
+
+	
+	private static int demanderAnnee() {
+		int annee=0;
+		do { System.out.println("Entrez une annee (1583-4000) :");
+		annee = saisi.nextInt();
+		
+		} while( annee <1583 || annee > 4000);
+		
+		return annee;
+	} 
+	
+	private static void afficheDate( int annee, int nombreJour) {
+		String mois = " ";
+		
+		
+		if (nombreJour <= 31 ) {
+			mois= " mars";}
+		if (nombreJour >= 32)
+			{
+			mois =" avril";
+			nombreJour-=31;
+			}
+		 
+		System.out.printf("Date de Paques en " + annee + " : " + nombreJour + mois);
+	}
+
+	private static int datePaques (int annee) {
+		int jour =0;
+		int siecle = annee / 100;
+		int p = (13+8*siecle)/25;
+		int q = siecle /4;
+		int m = (15 - p + siecle - q )%30;
+		int n = ( 4 + siecle -q) % 7;
+		int d = (m + 16 * (annee %19)) % 30 ;
+		int e =( 2 * ( annee % 4 ) + 4 * ( annee % 7 ) + 6 * d + n ) % 7;
+		jour = e + d +22;
+		
+		
+		if (e==6 &&  d==29 )
+			{
+			jour -= 7;
+			}
+		if ( e == 6 && (d==28 ||(11 * ( m + 1 ) % 30)< 19 ) )
+		{
+			jour -= 7;
+			}
+		return jour;
+	}
+}

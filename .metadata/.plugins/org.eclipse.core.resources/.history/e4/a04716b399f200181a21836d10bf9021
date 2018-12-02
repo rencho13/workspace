@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+
+		public class Quiz {
+			static int f(int a, int b) {
+				a += 4;
+				b *= 2;
+				if (a+b > 10) {
+					return a;
+				}
+				else  {
+					return b;
+				}
+				
+			}
+
+			public static void main(String[] args) {
+
+				int a = 2;
+				int b = 4;
+
+		        b*= f(b,a);
+
+				if (a+b > 10) {
+					System.out.println( a + " " + b + " " + (a+b));
+				}
+				else {
+					System.out.println( a + " " + b + " " + (a*b));
+				}
+			}
+		}
+	
